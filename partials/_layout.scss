@@ -83,6 +83,9 @@ transform: scale(1.07);
         width: 100%;
         
     }
+    .hero-container h1 {
+        font-size: 30px; /* Ajuste o tamanho da fonte para telas menores */
+    }
 
     p{
         font-size: 14px;
@@ -92,7 +95,7 @@ transform: scale(1.07);
 
 @media screen and (max-width: 40px) {
     .hero{
-        font-size: 24px;
+        font-size: 14px;
     }
     
 }
@@ -113,11 +116,21 @@ transform: scale(1.07);
     gap: 14px;
     padding: 34px 14px 64px 14px;
 
-    img{
-        max-width: 570px;
-    }
-
+    
 }
+/* Estilos gerais para a imagem */
+img {
+    max-width: 100%; /* A imagem terá uma largura máxima de 100% */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+  }
+  
+  /* Adaptação para telas menores usando @media query */
+  @media (max-width: 768px) {
+    img {
+      max-width: 100%; /* Continua com a largura máxima de 100% para telas menores */
+    }
+  }
+  
 
 .about-content div{
     flex:1;
@@ -143,6 +156,8 @@ transform: scale(1.07);
         flex-direction: column;
     }
 }
+
+
 //---------------------------
 
 // SERVICES ---------------
